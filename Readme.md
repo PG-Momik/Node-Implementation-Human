@@ -45,6 +45,9 @@
        - `published`: Filter by published date (exact match).
        - `crawled`: Filter by crawled date (exact match).
        - Additionally, there is a `per_page` query param that changes how many results are returned. (default=20)
+       ```
+         http://localhost:3000/api/posts?author=Medin
+       ```
     3. **`localhost:3000/api/fetch-webz-posts`**: Triggers a call to the Webz.io API. For now, these are the only query params that can be passed to Web.io's News Lite APi:
        - `q`
        - `sort`
@@ -52,6 +55,9 @@
        - `sentiment`
        - `highlight`
        - `size`
+       ```
+         http://localhost:3000/api/fetch-webz-posts?q=AI in military&sentiment=negative
+       ```
 ---
 
 # Things to Note
